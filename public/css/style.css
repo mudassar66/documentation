@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: 'Raleway', sans-serif;
-    margin-top: 45px;}
+    }
 h1{
     font-family: 'Raleway', sans-serif;
     color: #333333;
@@ -169,16 +169,73 @@ li{
     float: left;
     margin-bottom: 15px;;
 }
-:link {
-    color: #333;
+
+.bmarg {
+    margin-bottom: 30px;
 }
-a, a:visited{
-    color: #333;
+.dotted-underline {
+    border-bottom: 1px dotted #8FBC8F;
 }
-a:hover{
+.tpad {
+    padding-top: 25px;
+}
+.lpad {
+    padding-left: 45px;
+}
+.rpad {
+    padding-right: 5px;
+}
+.lmargin {
+    margin-left: 140px;
+}
+.navpad{
+    padding: 15px;
+}
+.tmargin {
+    margin-top: 250px;
+}
+.side-bar a:link {
+    color: #008000;
+    text-decoration: none;
+}
+.side-bar a:hover {
+    text-decoration: none;
+    color: #009966;
     opacity: .7;
     cursor: pointer;
 }
-.bmarg{
-    margin-bottom: 30px;
+.side-bar a:visited {
+    color: #008000;
+    text-decoration: none;
+}
+.top-nav a:link {
+    
+}
+.top-nav a:hover {
+    text-decoration: none;
+    color: #008000;
+    opacity: .7;
+    cursor: pointer;
+}
+body, html {
+  position: fixed;
+  margin-left: 196px;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+.mycontent-left {
+    border-right: 1px solid #8FBC8F;
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
 }
