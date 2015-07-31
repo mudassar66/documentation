@@ -11,20 +11,12 @@
 
 use Helpers\View;
 
-class HomeController extends BaseController {
-
-	/**
-	 *This method loads the homepage 
-	 *
-	 *@param null
-	 *@return void
-	 */
+class PrefaceController extends BaseController{
+	
+//set the main content value
 	public function getIndex()
 	{
-		//get the ending date today
-		View::render('index');
-
+		View::render('preface/preface');
 	}
-	
-}
 
+}

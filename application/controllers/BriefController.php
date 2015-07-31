@@ -11,20 +11,11 @@
 
 use Helpers\View;
 
-class HomeController extends BaseController {
+class BriefController extends BaseController{
 
-	/**
-	 *This method loads the homepage 
-	 *
-	 *@param null
-	 *@return void
-	 */
+//set the value of main_content to the path of the brief tour view file
 	public function getIndex()
 	{
-		//get the ending date today
-		View::render('index');
-
-	}
-	
+		View::render('briefTour/briefTour');
+	}	
 }
-

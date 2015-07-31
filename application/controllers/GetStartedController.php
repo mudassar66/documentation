@@ -11,20 +11,11 @@
 
 use Helpers\View;
 
-class HomeController extends BaseController {
-
-	/**
-	 *This method loads the homepage 
-	 *
-	 *@param null
-	 *@return void
-	 */
+class GetStartedController extends BaseController{
+	
+//set the value of main_content to be the path to the getStarted view file
 	public function getIndex()
 	{
-		//get the ending date today
-		View::render('index');
-
-	}
-	
+		View::render('getStarted/getStarted');
+	}		
 }
-
