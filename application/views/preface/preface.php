@@ -1,54 +1,11 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head profile="http://www.w3.org/2005/10/profile">
-<link rel="icon" type="image/ico" href="{{Url::assets('img/logo.png')}}">
-
-    <meta charset="UTF-8">
-    <title>Gliver MVC PHP Framework</title>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-     <!--    LOAD CUSTOM STYLES    -->
-    <link rel="stylesheet" href="{{Url::assets('css/style.css')}}">
-    <link rel="stylesheet" href="{{Url::assets('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{Url::assets('css/dashboard.css')}}">
-    
-    <!-- Optional theme -->
-    
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
-</head>
+@include('header')
 <body>
-<nav class="navbar navbar-default navbar-fixed-top top-nav">
-  <div class="container-fluid">
-  <div class="row">
-        <a class="navbar-brand" href="#">
-        <img alt="Brand" src="{{Url::assets('img/favicon.ico')}}">
-        </a>
-      <a class="navbar-brand" href="#">Gliver MVC</a>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right" id="collapse1">
+@include('navbar')
 
-      <ul class="nav navbar-nav top-nav">
-        <li class="active"><a href="#">Documentation <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Download</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Contribute</a></li>
-        </div>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-</div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-3 mycontent-left tpad side-bar sidebar">
+        <div class="col-sm-3 mycontent-left side-bar sidebar">
         <div class="row">
             <h4 class="lead">Content List</h4>
         </div>
@@ -60,32 +17,32 @@
               <button type="submit" class="btn btn-success">Submit</button>
             </form>
         </div>
-           <div class="lpad"> 
+          <div class="lpad">
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Preface</li>
+                    <li id="introduction" class="lead tpad dotted-underline">Preface</li>
                 </ul>
             </div>
             <ul>
                 <div class="row">
-                   <li><a href="{{Url::base('preface#introduction')}}">Introduction</a></li>
+                   <li><a href="#introduction">Introduction</a></li>
                 </div>
                 <div class="row">   
-                    <li><a href="{{Url::base('preface#quick_start')}}">Quick Start</a></li>
+                    <li><a href="#quick_start">Quick Start</a></li>
                 </div>    
                 <div class="row">
-                      <li><a href="{{Url::base('preface#release_notes')}}">Release Notes</a></li>
+                      <li><a href="#release_notes">Release Notes</a></li>
                 </div>      
                 <div class="row">
-                       <li><a href="{{Url::base('preface#upgrade_guide')}}">Upgrade Guide</a></li>
+                       <li><a href="#upgrade_guide">Upgrade Guide</a></li>
                 </div>       
                 <div class="row">
-                        <li><a href="{{Url::base('preface#contribution_guide')}}">Contribution Guide</a></li>
+                        <li><a href="#contribution_guide">Contribution Guide</a></li>
                 </div>        
             </ul>
              <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Installation</li>
+                    <li id="via_composer" class="lead tpad dotted-underline">Installation</li>
                 </ul>
             </div>
             <ul>
@@ -104,7 +61,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Brief Tour</li>
+                    <li id="controllers" class="lead tpad dotted-underline">Brief Tour</li>
                 </ul>
             </div>
             <ul>
@@ -120,7 +77,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Getting Started</li>
+                    <li id="glance" class="lead tpad dotted-underline">Getting Started</li>
                 </ul>
             </div>
             <ul>
@@ -151,7 +108,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Helpers</li>
+                    <li id="array" class="lead tpad dotted-underline">Helpers</li>
                 </ul>
             </div>
             <ul>
@@ -250,7 +207,7 @@
                 </div> 
                 <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Database</li>
+                    <li id="basic_usage" class="lead tpad dotted-underline">Database</li>
                 </ul>
                 </div>
                 <ul>
@@ -281,7 +238,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Caching</li>
+                    <li id="memcache" class="lead tpad dotted-underline">Caching</li>
                 </ul>
             </div>
             <ul>
@@ -297,10 +254,29 @@
             </ul>
             </div>
       </div> 
-        <div class="col-lg-9 lpad">
-             
+        <div class="col-lg-9 lmargin">
+           <h4 id="introduction">Introduction</h4>
+            <p>
+                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+                       
+            <h4 id="quick_start">Quick Start</h4>
+                <p>
+                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+                </p>
+            <h4 id="release_notes">Release Notes</h4>
+                <p>
+                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+                </p>    
+            <h4 id="upgrade_guide">Upgrade Guide</h4>
+                <p>
+                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+                </p>
+            <h4 id="contribution_guide">Contribution Guide</h4>
+                <p>
+                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+                </p>     
         </div>
     </div>
 </div>
-</body>
-</html>
+@include('footer')

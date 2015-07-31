@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head profile="http://www.w3.org/2005/10/profile">
-<link rel="icon" type="image/ico" href="{{Url::assets('img/logo.png')}}">
-
-    <meta charset="UTF-8">
-    <title>Gliver MVC PHP Framework</title>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-     <!--    LOAD CUSTOM STYLES    -->
-    <link rel="stylesheet" href="{{Url::assets('css/style.css')}}">
-    <link rel="stylesheet" href="{{Url::assets('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{Url::assets('css/dashboard.css')}}">
-    
-    <!-- Optional theme -->
-    
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
-</head>
+@include('header')
 <body>
 <nav class="navbar navbar-default navbar-fixed-top top-nav">
   <div class="container-fluid">
@@ -48,7 +27,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-3 mycontent-left tpad side-bar sidebar">
+        <div class="col-sm-3 mycontent-left side-bar sidebar">
         <div class="row">
             <h4 class="lead">Content List</h4>
         </div>
@@ -60,10 +39,10 @@
               <button type="submit" class="btn btn-success">Submit</button>
             </form>
         </div>
-           <div class="lpad"> 
+           <div class="lpad">
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Preface</li>
+                    <li id="introduction" class="lead tpad dotted-underline">Preface</li>
                 </ul>
             </div>
             <ul>
@@ -85,7 +64,7 @@
             </ul>
              <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Installation</li>
+                    <li id="via_composer" class="lead tpad dotted-underline">Installation</li>
                 </ul>
             </div>
             <ul>
@@ -104,7 +83,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Brief Tour</li>
+                    <li id="controllers" class="lead tpad dotted-underline">Brief Tour</li>
                 </ul>
             </div>
             <ul>
@@ -120,7 +99,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Getting Started</li>
+                    <li id="glance" class="lead tpad dotted-underline">Getting Started</li>
                 </ul>
             </div>
             <ul>
@@ -151,106 +130,106 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Helpers</li>
+                    <li id="array" class="lead tpad dotted-underline">Helpers</li>
                 </ul>
             </div>
             <ul>
                 <div class="row">
-                   <li><a href="{{Url::base('helpers#array')}}">Array</a></li>
+                   <li><a href="#array">Array</a></li>
                 </div>
                 <div class="row">   
-                    <li><a href="{{Url::base('helpers#calendar')}}">Calendar</a></li>
+                    <li><a href="#calendar">Calendar</a></li>
                 </div>    
                 <div class="row">
-                      <li><a href="{{Url::base('helpers#captcha')}}">CAPTCHA</a></li>
+                      <li><a href="#captcha">CAPTCHA</a></li>
                 </div>      
                 <div class="row">
-                       <li><a href="{{Url::base('helpers#cart')}}">Cart</a></li>
+                       <li><a href="#cart">Cart</a></li>
                 </div>  
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#config')}}">Config</a></li>
+                        <li><a href="#config">Config</a></li>
                 </div>      
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#date')}}">Date</a></li>
+                        <li><a href="#date">Date</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#directory')}}">Directory</a></li>
+                        <li><a href="#directory">Directory</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#download')}}">Download</a></li>
+                        <li><a href="#download">Download</a></li>
                 </div>  
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#email')}}">Email</a></li>
+                        <li><a href="#email">Email</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#encryption')}}">Encryption</a></li>
+                        <li><a href="#encryption">Encryption</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#file')}}">File</a></li>
+                        <li><a href="#file">File</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#form')}}">Form</a></li>
+                        <li><a href="#form">Form</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#html')}}">HTML</a></li>
+                        <li><a href="#html">HTML</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#inflector')}}">Inflector</a></li>
+                        <li><a href="#inflector">Inflector</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#input')}}">Input</a></li>
+                        <li><a href="#input">Input</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#language')}}">Language</a></li>
+                        <li><a href="#language">Language</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#migration')}}">Migration</a></li>
+                        <li><a href="#migration">Migration</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#number')}}">Number</a></li>
+                        <li><a href="#number">Number</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#pagination')}}">Pagination</a></li>
+                        <li><a href="#pagination">Pagination</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#sath')}}">Path</a></li>
+                        <li><a href="#sath">Path</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#security')}}">Security</a></li>
+                        <li><a href="#security">Security</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#session')}}">Session</a></li>
+                        <li><a href="#session">Session</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#smiley')}}">Smiley</a></li>
+                        <li><a href="#smiley">Smiley</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#string')}}">String</a></li>
+                        <li><a href="#string">String</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#template_parser')}}">Template Parser</a></li>
+                        <li><a href="#template_parser">Template Parser</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#text')}}">Text</a></li>
+                        <li><a href="#text">Text</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#Typography')}}">Typography</a></li>
+                        <li><a href="#Typography">Typography</a></li>
                 </div>  
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#unit_testing')}}">Unit testing</a></li>
+                        <li><a href="#unit_testing">Unit testing</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#validation')}}">Validation</a></li>
+                        <li><a href="#validation">Validation</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#xml')}}">XML</a></li>
+                        <li><a href="#xml">XML</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('helpers#zip_encoding')}}">ZIP Encoding</a></li>
+                        <li><a href="#zip_encoding">ZIP Encoding</a></li>
                 </div> 
                 <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Database</li>
+                    <li id="basic_usage" class="lead tpad dotted-underline">Database</li>
                 </ul>
                 </div>
                 <ul>
@@ -281,7 +260,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Caching</li>
+                    <li id="memcache" class="lead tpad dotted-underline">Caching</li>
                 </ul>
             </div>
             <ul>
@@ -295,12 +274,143 @@
                       <li><a href="{{Url::base('caching#redis')}}">Redis</a></li>
                 </div>                   
             </ul>
-            </div>
+          </div>   
       </div> 
-        <div class="col-lg-9 lpad">
-             
-        </div>
+        <div class="col-lg-9 lmargin">
+           
+           <h4 id="array">Array</h4>
+        <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+        </p>
+                   
+        <h4 id="calendar">Calendar</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="captcha">Captcha</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>    
+        <h4 id="cart">Cart</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="config">Config</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>    
+        <h4 id="cookie">Cookie</h4>
+        <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+        </p>
+                   
+        <h4 id="date">Date</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="directory">Directory</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>    
+        <h4 id="download">Download</h4>
+        <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+        </p>
+                   
+        <h4 id="email">Email</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="encryption">Encryption</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>    
+        <h4 id="file">File</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="form">Form</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>    
+        <h4 id="html">HTML</h4>
+        <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+        </p>
+                   
+        <h4 id="inflector">Inflector</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="input">Input</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>        
+        <h4 id="language">Language</h4>
+        <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+        </p>
+                   
+        <h4 id="migration">Migration</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="number">Number</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>    
+        <h4 id="pagination">Pagination</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+                   
+        <h4 id="security">Security</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="session">Session</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>     
+        <h4 id="smiley">Smiley</h4>
+        <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+        </p>
+                   
+        <h4 id="string">String</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="template_parser">Template</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>    
+        <h4 id="text">Text</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="typography">Typography</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>    
+        <h4 id="unit">Unit</h4>
+        <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+        </p>
+                   
+        <h4 id="validation">Validation</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+        <h4 id="xml">XML</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p> 
+        <h4 id="zip">Zip Encoding</h4>
+            <p>
+            <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>      
+                </div>
     </div>
 </div>
-</body>
-</html>
+@include('footer')
