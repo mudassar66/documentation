@@ -11,20 +11,12 @@
 
 use Helpers\View;
 
-class HomeController extends BaseController {
+class InstallationController extends BaseController{
 
-	/**
-	 *This method loads the homepage 
-	 *
-	 *@param null
-	 *@return void
-	 */
+//Set the value of main_content variable to be the path to the installation view file	
 	public function getIndex()
 	{
-		//get the ending date today
-		View::render('index');
-
+		View::render('installation/installation');
 	}
-	
-}
 
+}

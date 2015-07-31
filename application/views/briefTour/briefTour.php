@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head profile="http://www.w3.org/2005/10/profile">
-<link rel="icon" type="image/ico" href="{{Url::assets('img/logo.png')}}">
-
-    <meta charset="UTF-8">
-    <title>Gliver MVC PHP Framework</title>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-     <!--    LOAD CUSTOM STYLES    -->
-    <link rel="stylesheet" href="{{Url::assets('css/style.css')}}">
-    <link rel="stylesheet" href="{{Url::assets('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{Url::assets('css/dashboard.css')}}">
-    
-    <!-- Optional theme -->
-    
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
-</head>
+@include('header')
 <body>
 <nav class="navbar navbar-default navbar-fixed-top top-nav">
   <div class="container-fluid">
@@ -48,7 +27,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-3 mycontent-left tpad side-bar sidebar">
+        <div class="col-sm-3 mycontent-left side-bar sidebar">
         <div class="row">
             <h4 class="lead">Content List</h4>
         </div>
@@ -63,7 +42,7 @@
            <div class="lpad"> 
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Preface</li>
+                    <li id="introduction" class="lead tpad dotted-underline">Preface</li>
                 </ul>
             </div>
             <ul>
@@ -85,12 +64,12 @@
             </ul>
              <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Installation</li>
+                    <li id="via_composer" class="lead tpad dotted-underline">Installation</li>
                 </ul>
             </div>
             <ul>
                 <div class="row">
-                   <li><a href="{{Url::base('installation#via_composer')}}">Via Composer</a></li>
+                   <li><a href="{{Url::base('installation#via_composerVia')}}">Composer</a></li>
                 </div>
                 <div class="row">   
                     <li><a href="{{Url::base('installation#downloading')}}">Downloading</a></li>
@@ -104,23 +83,23 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Brief Tour</li>
+                    <li id="controllers" class="lead tpad dotted-underline">Brief Tour</li>
                 </ul>
             </div>
             <ul>
                 <div class="row">
-                   <li><a href="{{Url::base('brief#controllers')}}">Controllers</a></li>
+                   <li><a href="#controllers">Controllers</a></li>
                 </div>
                 <div class="row">   
-                    <li><a href="{{Url::base('brief#views')}}">Views</a></li>
+                    <li><a href="#views">Views</a></li>
                 </div>    
                 <div class="row">
-                      <li><a href="{{Url::base('brief#models')}}">Models</a></li>
+                      <li><a href="#models'">Models</a></li>
                 </div>                   
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Getting Started</li>
+                    <li id="glance" class="lead tpad dotted-underline">Getting Started</li>
                 </ul>
             </div>
             <ul>
@@ -151,7 +130,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Helpers</li>
+                    <li id="array" class="lead tpad dotted-underline">Helpers</li>
                 </ul>
             </div>
             <ul>
@@ -250,7 +229,7 @@
                 </div> 
                 <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Database</li>
+                    <li id="basic_usage" class="lead tpad dotted-underline">Database</li>
                 </ul>
                 </div>
                 <ul>
@@ -281,7 +260,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Caching</li>
+                    <li id="memcache" class="lead tpad dotted-underline">Caching</li>
                 </ul>
             </div>
             <ul>
@@ -295,12 +274,23 @@
                       <li><a href="{{Url::base('caching#redis')}}">Redis</a></li>
                 </div>                   
             </ul>
-            </div>
+           </div> 
       </div> 
-        <div class="col-lg-9 lpad">
-             
+        <div class="col-lg-9 lmargin">
+           <h4 id="controllers">Controllers</h4>
+            <p>
+                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+            </p>
+                       
+            <h4 id="views">Views</h4>
+                <p>
+                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+                </p>
+            <h4 id="models">Models</h4>
+                <p>
+                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+                </p>    
         </div>
     </div>
 </div>
-</body>
-</html>
+@include('footer')

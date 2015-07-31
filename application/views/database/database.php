@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
      <!--    LOAD CUSTOM STYLES    -->
     <link rel="stylesheet" href="{{Url::assets('css/style.css')}}">
-    <link rel="stylesheet" href="{{Url::assets('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ Url::assets('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{Url::assets('css/dashboard.css')}}">
-    
     <!-- Optional theme -->
     
     <!-- Latest compiled and minified JavaScript -->
@@ -48,7 +47,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-3 mycontent-left tpad side-bar sidebar">
+        <div class="col-sm-3 mycontent-left side-bar sidebar">
         <div class="row">
             <h4 class="lead">Content List</h4>
         </div>
@@ -63,7 +62,7 @@
            <div class="lpad"> 
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Preface</li>
+                    <li id="introduction" class="lead tpad dotted-underline">Preface</li>
                 </ul>
             </div>
             <ul>
@@ -85,7 +84,7 @@
             </ul>
              <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Installation</li>
+                    <li id="via_composer" class="lead tpad dotted-underline">Installation</li>
                 </ul>
             </div>
             <ul>
@@ -104,7 +103,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Brief Tour</li>
+                    <li id="controllers" class="lead tpad dotted-underline">Brief Tour</li>
                 </ul>
             </div>
             <ul>
@@ -120,7 +119,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Getting Started</li>
+                    <li id="glance" class="lead tpad dotted-underline">Getting Started</li>
                 </ul>
             </div>
             <ul>
@@ -151,7 +150,7 @@
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Helpers</li>
+                    <li id="array" class="lead tpad dotted-underline">Helpers</li>
                 </ul>
             </div>
             <ul>
@@ -250,38 +249,38 @@
                 </div> 
                 <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Database</li>
+                    <li id="basic_usage" class="lead tpad dotted-underline">Database</li>
                 </ul>
                 </div>
                 <ul>
                 <div class="row">
-                   <li><a href="{{Url::base('database#basic_usage')}}">Basic Usage</a></li>
+                   <li><a href="#basic_usage">Basic Usage</a></li>
                 </div>
                 <div class="row">   
-                    <li><a href="{{Url::base('database#query_builder')}}">Query Builder</a></li>
+                    <li><a href="#query_builder">Query Builder</a></li>
                 </div>    
                 <div class="row">
-                      <li><a href="{{Url::base('database#eloquent')}}">Eloquent ORM</a></li>
+                      <li><a href="#eloquent">Eloquent ORM</a></li>
                 </div>      
                 <div class="row">
-                       <li><a href="{{Url::base('database#schema_builder')}}">Schema Builder</a></li>
+                       <li><a href="#schema_builder">Schema Builder</a></li>
                 </div>       
                 <div class="row">
-                        <li><a href="{{Url::base('database#migration_seeding')}}">Migration/Seeding</a></li>
+                        <li><a href="#migration_seeding">Migration/Seeding</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('database#sql')}}">SQL</a></li>
+                        <li><a href="#sql">SQL</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="{{Url::base('database#nosql')}}">NoSQL-MongoDB</a></li>
+                        <li><a href="#nosql">NoSQL-MongoDB</a></li>
                 </div>  
                 <div class="row">
-                        <li><a href="{{Url::base('database#postgre')}}">PostgreSQl</a></li>
+                        <li><a href="#postgre">PostgreSQl</a></li>
                 </div>       
             </ul>
             <div class="row">
                 <ul>
-                    <li class="lead tpad dotted-underline">Caching</li>
+                    <li id="memcache" class="lead tpad dotted-underline">Caching</li>
                 </ul>
             </div>
             <ul>
@@ -295,12 +294,44 @@
                       <li><a href="{{Url::base('caching#redis')}}">Redis</a></li>
                 </div>                   
             </ul>
-            </div>
+           </div> 
       </div> 
-        <div class="col-lg-9 lpad">
-             
+        <div class="col-lg-9 lmargin">
+           <h4 id="basic_usage">Basic Usage</h4>
+			<p>
+			    <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+			</p>
+			           
+			<h4 id="query_builder">Query Builder</h4>
+			    <p>
+			    <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+			    </p>
+			<h4 id="eloquent">Eloguent ORM</h4>
+			    <p>
+			    <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+			    </p>    
+			<h4 id="schema_builder">Schema Builder</h4>
+			    <p>
+			    <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+			    </p>
+			<h4 id="migration_seeding">Migration Seeding</h4>
+			<p>
+			    <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+			</p>
+			           
+			<h4 id="sql">SQL</h4>
+			    <p>
+			    <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+			    </p>
+			<h4 id="nosql">NoSQL</h4>
+			    <p>
+			    <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+			    </p>    
+			<h4 id="postgre">PostgreSQL</h4>
+			    <p>
+			    <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
+			    </p>         
         </div>
     </div>
 </div>
-</body>
-</html>
+@include('footer')

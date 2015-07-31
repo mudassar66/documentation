@@ -11,20 +11,11 @@
 
 use Helpers\View;
 
-class HomeController extends BaseController {
+class DatabaseController extends BaseController{
 
-	/**
-	 *This method loads the homepage 
-	 *
-	 *@param null
-	 *@return void
-	 */
+//set the value of main_content to be the path to the database view file
 	public function getIndex()
 	{
-		//get the ending date today
-		View::render('index');
-
+		View::render('database/database');
 	}
-	
 }
-
