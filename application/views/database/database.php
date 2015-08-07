@@ -1,50 +1,9 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head profile="http://www.w3.org/2005/10/profile">
-<link rel="icon" type="image/ico" href="{{Url::assets('img/logo.png')}}">
+@include('header')
 
-    <meta charset="UTF-8">
-    <title>Gliver MVC PHP Framework</title>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-     <!--    LOAD CUSTOM STYLES    -->
-    <link rel="stylesheet" href="{{Url::assets('css/style.css')}}">
-    <link rel="stylesheet" href="{{ Url::assets('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{Url::assets('css/dashboard.css')}}">
-    <!-- Optional theme -->
-    
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
-</head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top top-nav">
-  <div class="container-fluid">
-  <div class="row">
-        <a class="navbar-brand" href="#">
-        <img alt="Brand" src="{{Url::assets('img/favicon.ico')}}">
-        </a>
-      <a class="navbar-brand" href="#">Gliver MVC</a>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right" id="collapse1">
+@include('navbar')
 
-      <ul class="nav navbar-nav top-nav">
-        <li class="active"><a href="#">Documentation <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Download</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Contribute</a></li>
-        </div>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-</div>
 <div class="container">
     <div class="row">
         <div class="col-sm-3 mycontent-left side-bar sidebar">
