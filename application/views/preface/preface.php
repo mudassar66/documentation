@@ -1,282 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
 @include('header')
+
 <body>
 
 @include('navbar')
 
 <div class="container">
+
     <div class="row">
-        <div class="col-sm-3 mycontent-left side-bar sidebar">
-        <div class="row">
-            <h4 class="lead">Content List</h4>
-        </div>
-        <div class="row rpad">
-            <form  role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-success">Submit</button>
-            </form>
-        </div>
-          <div class="lpad">
-            <div class="row">
-                <ul>
-                    <li id="introduction" class="lead tpad dotted-underline">Preface</li>
-                </ul>
-            </div>
-            <ul>
-                <div class="row">
-                   <li><a href="#introduction">Introduction</a></li>
-                </div>
-                <div class="row">   
-                    <li><a href="#quick_start">Quick Start</a></li>
-                </div>    
-                <div class="row">
-                      <li><a href="#release_notes">Release Notes</a></li>
-                </div>      
-                <div class="row">
-                       <li><a href="#upgrade_guide">Upgrade Guide</a></li>
-                </div>       
-                <div class="row">
-                        <li><a href="#contribution_guide">Contribution Guide</a></li>
-                </div>        
-            </ul>
-             <div class="row">
-                <ul>
-                    <li id="via_composer" class="lead tpad dotted-underline">Installation</li>
-                </ul>
-            </div>
-            <ul>
-                <div class="row">
-                   <li><a href="{{Url::base('installation#via_composer')}}">Via Composer</a></li>
-                </div>
-                <div class="row">   
-                    <li><a href="{{Url::base('installation#downloading')}}">Downloading</a></li>
-                </div>    
-                <div class="row">
-                      <li><a href="{{Url::base('installation#upgrade')}}">Upgrade from previous versions</a></li>
-                </div>      
-                <div class="row">
-                       <li><a href="{{Url::base('installation#troubleshooting')}}">Troubleshooting</a></li>
-                </div>              
-            </ul>
-            <div class="row">
-                <ul>
-                    <li id="controllers" class="lead tpad dotted-underline">Brief Tour</li>
-                </ul>
-            </div>
-            <ul>
-                <div class="row">
-                   <li><a href="{{Url::base('brief#controllers')}}">Controllers</a></li>
-                </div>
-                <div class="row">   
-                    <li><a href="{{Url::base('brief#views')}}">Views</a></li>
-                </div>    
-                <div class="row">
-                      <li><a href="{{Url::base('brief#models')}}">Models</a></li>
-                </div>                   
-            </ul>
-            <div class="row">
-                <ul>
-                    <li id="glance" class="lead tpad dotted-underline">Getting Started</li>
-                </ul>
-            </div>
-            <ul>
-                <div class="row">
-                   <li><a href="{{Url::base('getStarted#glance')}}">Gliver at a glance</a></li>
-                </div>
-                <div class="row">   
-                    <li><a href="{{Url::base('getStarted#supported_features')}}">Supported Features</a></li>
-                </div>    
-                <div class="row">
-                      <li><a href="{{Url::base('getStarted#flowchart')}}">Application Flow Chart</a></li>
-                </div>      
-                <div class="row">
-                       <li><a href="{{Url::base('getStarted#configuration')}}">Configuration</a></li>
-                </div>       
-                <div class="row">
-                        <li><a href="{{Url::base('getStarted#routing')}}">Routing</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('getStarted#input')}}">Request/Input</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('getStarted#views')}}">Views/Responses</a></li>
-                </div>  
-                <div class="row">
-                        <li><a href="{{Url::base('getStarted#errors')}}">Errors/Logging</a></li>
-                </div>       
-            </ul>
-            <div class="row">
-                <ul>
-                    <li id="array" class="lead tpad dotted-underline">Helpers</li>
-                </ul>
-            </div>
-            <ul>
-                <div class="row">
-                   <li><a href="{{Url::base('helpers#array')}}">Array</a></li>
-                </div>
-                <div class="row">   
-                    <li><a href="{{Url::base('helpers#calendar')}}">Calendar</a></li>
-                </div>    
-                <div class="row">
-                      <li><a href="{{Url::base('helpers#captcha')}}">CAPTCHA</a></li>
-                </div>      
-                <div class="row">
-                       <li><a href="{{Url::base('helpers#cart')}}">Cart</a></li>
-                </div>  
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#config')}}">Config</a></li>
-                </div>      
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#date')}}">Date</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#directory')}}">Directory</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#download')}}">Download</a></li>
-                </div>  
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#email')}}">Email</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#encryption')}}">Encryption</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#file')}}">File</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#form')}}">Form</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#html')}}">HTML</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#inflector')}}">Inflector</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#input')}}">Input</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#language')}}">Language</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#migration')}}">Migration</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#number')}}">Number</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#pagination')}}">Pagination</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#sath')}}">Path</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#security')}}">Security</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#session')}}">Session</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#smiley')}}">Smiley</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#string')}}">String</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#template_parser')}}">Template Parser</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#text')}}">Text</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#Typography')}}">Typography</a></li>
-                </div>  
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#unit_testing')}}">Unit testing</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#validation')}}">Validation</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#xml')}}">XML</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('helpers#zip_encoding')}}">ZIP Encoding</a></li>
-                </div> 
-                <div class="row">
-                <ul>
-                    <li id="basic_usage" class="lead tpad dotted-underline">Database</li>
-                </ul>
-                </div>
-                <ul>
-                <div class="row">
-                   <li><a href="{{Url::base('database#basic_usage')}}">Basic Usage</a></li>
-                </div>
-                <div class="row">   
-                    <li><a href="{{Url::base('database#query_builder')}}">Query Builder</a></li>
-                </div>    
-                <div class="row">
-                      <li><a href="{{Url::base('database#eloquent')}}">Eloquent ORM</a></li>
-                </div>      
-                <div class="row">
-                       <li><a href="{{Url::base('database#schema_builder')}}">Schema Builder</a></li>
-                </div>       
-                <div class="row">
-                        <li><a href="{{Url::base('database#migration_seeding')}}">Migration/Seeding</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('database#sql')}}">SQL</a></li>
-                </div> 
-                <div class="row">
-                        <li><a href="{{Url::base('database#nosql')}}">NoSQL-MongoDB</a></li>
-                </div>  
-                <div class="row">
-                        <li><a href="{{Url::base('database#postgre')}}">PostgreSQl</a></li>
-                </div>       
-            </ul>
-            <div class="row">
-                <ul>
-                    <li id="memcache" class="lead tpad dotted-underline">Caching</li>
-                </ul>
-            </div>
-            <ul>
-                <div class="row">
-                   <li><a href="{{Url::base('caching#memcache')}}">Memcache</a></li>
-                </div>
-                <div class="row">   
-                    <li><a href="{{Url::base('caching#memcached')}}">Memcached</a></li>
-                </div>    
-                <div class="row">
-                      <li><a href="{{Url::base('caching#redis')}}">Redis</a></li>
-                </div>                   
-            </ul>
-            </div>
-      </div> 
+        
+        @include('searchbar')
+
+        <div class="lpad">
+
+        @include('sidebar')
+            
+        </div> 
+
         <div class="col-lg-9 lmargin">
-           <h4 id="introduction">Introduction</h4>
-            <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-            </p>
+
+            <h4 id="introduction" class="text-danger lead">Introduction</h4>
+
+
+            
+                <p>The Gliver PHP MVC Framework is here to help PHP developers, both new and seasoned to get into web application development by making wonderful web application just in a matter of minutes. 
+                This framework was inspited by a community of developers who needed a lightweight framework for application developement with almost no learning curve</p>
                        
-            <h4 id="quick_start">Quick Start</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>
-            <h4 id="release_notes">Release Notes</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>    
-            <h4 id="upgrade_guide">Upgrade Guide</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>
-            <h4 id="contribution_guide">Contribution Guide</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>     
+
+
+
+            <h4 id="quick_start" class="text-danger lead">Quick Start</h4>
+
+
+
+
+                <p>To get started with Gliver PHP MVC Framework, you need a runing web server and then head to <a href="https://github.com/gliver-mvc/gliver">Github.com</a> and download the source code  </p>
+                <p>Once you have downloaded the source code, extract it into the root directory of your web server and access the application vai a web browser, specifying the name of your installation directory, and there you go! Wish you a happy coding experience after...</p>
+                <p>For example, let's say you extracted your code into a folder in your web root called <code>gliver</code>, you access via your url in this manner <code>http://localhost/gliver</code> </p>
+                <p>By default, the page that loads is the application home page... How did we get here? Check the directory structure below</p>
+                <pre>
+                    application
+                    bin
+                    config
+                    public
+                    system
+                    vendor
+                    .htaccess
+                    license.txt
+                    readme.md
+                    composer.json
+                </pre>
+
+                <p>At the very top is the application folder. This is where all of your code is gonna reside. In here you are going to write your code for the <code>Controllers</code>, <code>Models</code>, <code>Views</code> among others... For instance, you get to your controllers in this manner <code>application/controllers/BaseController.php</code></p>
+                <p>Next is the <code>bin</code> folder. In here, all the error logs are written in the <code>error.log</code> file. You get to the error log by navigating in this manner <code>bin/logs/error.log</code></p>
+                <p>Following is the <code>config</code> folder. You are going to out all you application settings in here. So you wanna be careful with this folder. The settings are placed in an array from which they are loaded at run time. So you will want to ensure you maintain a valid array in here.
+                We have two configuration files...</p>
+                <pre>
+                    config
+                        ../config.php
+                        ../database.php
+                </pre>
+                <p>The <code>config.php</code> file is for all the general configuration while the <code>database.php</code> is particularly for the database configuration settings</p>
+
+                <p>Just below the config directory is the <code>public</code> directory. Here you put the resources that you need for your applicaiton. These include the <code>css, javascript</code> and <code>images</code></p>
+                <p>Next is the <code>system</code> directory. You don't wanna touch this. This is the core of the Gliver MVC Framework. All the code upon which this framework is built reside here</p>
+                <p>The <code>vendor</code> directory has the composer files that this framework uses to define it's autoloading classes.</p>
+
+            <h4 id="release_notes" class="text-danger" class="text-danger lead">Release Notes</h4>
+                
+
+
+                <p>This PHP MVC Framework is still in the alpha version, so we don't have much to say as pertains to the Release notes...</p>    
+           
+
+
+            <h4 id="upgrade_guide" class="text-danger lead">Upgrade Guide</h4>
+                
+
+
+                <p>Gliver MVC is under active developemnt and updates are being pushed to the <a href="https://github.com/gliver-mvc/gliver">Github</a> repository every day. The updates include very cooling features that you have been waiting for...you don't want to be left out. So check out this <a href="https://github.com/gliver-mvc/gliver">link</a> for the latest code</p>
+            
+
+
+            <h4 id="contribution_guide" class="text-danger lead">Contribution Guide</h4>
+                
+
+
+                <p>We are really grateful you are amazed by the term open source and you wanna be part.  We welcome your contributions as the main drive for this framework is to develop an active communicaty around this code base. To contribute just folk this repository and fire on... Once we have some cool features in, do a pull request and we will be in touch to get the code merged in a reasonable time</p>     
+        
+
+
         </div>
+
     </div>
+
 </div>
+
 @include('footer')
+
+</body>
+</html>

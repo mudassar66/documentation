@@ -11,12 +11,19 @@
 
 use Helpers\View;
 
-class PrefaceController extends BaseController{
+class PrefaceController extends BaseController {
 	
-//set the main content value
+	/**
+	 *This method loads the view page for the preface
+	 *
+	 *@param null
+	 *@return void
+	 */
 	public function getIndex()
 	{
+		//load the view page
 		View::render('preface/preface');
+		
 	}
 
 }

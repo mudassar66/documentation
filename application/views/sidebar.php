@@ -1,43 +1,23 @@
-@include('header')
-<body>
-
-@include('navbar')
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3 mycontent-left side-bar sidebar">
-        <div class="row">
-            <h4 class="lead">Content List</h4>
-        </div>
-        <div class="row rpad">
-            <form  role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-success">Submit</button>
-            </form>
-        </div>
-           <div class="lpad"> 
-            <div class="row">
+<div class="row">
                 <ul>
                     <li id="introduction" class="lead tpad dotted-underline">Preface</li>
                 </ul>
             </div>
             <ul>
                 <div class="row">
-                   <li><a href="{{Url::base('preface#introduction')}}">Introduction</a></li>
+                   <li><a href="#introduction">Introduction</a></li>
                 </div>
                 <div class="row">   
-                    <li><a href="{{Url::base('preface#quick_start')}}">Quick Start</a></li>
+                    <li><a href="#quick_start">Quick Start</a></li>
                 </div>    
                 <div class="row">
-                      <li><a href="{{Url::base('preface#release_notes')}}">Release Notes</a></li>
+                      <li><a href="#release_notes">Release Notes</a></li>
                 </div>      
                 <div class="row">
-                       <li><a href="{{Url::base('preface#upgrade_guide')}}">Upgrade Guide</a></li>
+                       <li><a href="#upgrade_guide">Upgrade Guide</a></li>
                 </div>       
                 <div class="row">
-                        <li><a href="{{Url::base('preface#contribution_guide')}}">Contribution Guide</a></li>
+                        <li><a href="#contribution_guide">Contribution Guide</a></li>
                 </div>        
             </ul>
              <div class="row">
@@ -82,28 +62,28 @@
             </div>
             <ul>
                 <div class="row">
-                   <li><a href="#glance">Gliver at a glance</a></li>
+                   <li><a href="{{Url::base('getStarted#glance')}}">Gliver at a glance</a></li>
                 </div>
                 <div class="row">   
-                    <li><a href="#supported_features">Supported Features</a></li>
+                    <li><a href="{{Url::base('getStarted#supported_features')}}">Supported Features</a></li>
                 </div>    
                 <div class="row">
-                      <li><a href="#flowchart">Application Flow Chart</a></li>
+                      <li><a href="{{Url::base('getStarted#flowchart')}}">Application Flow Chart</a></li>
                 </div>      
                 <div class="row">
-                       <li><a href="#configuration">Configuration</a></li>
+                       <li><a href="{{Url::base('getStarted#configuration')}}">Configuration</a></li>
                 </div>       
                 <div class="row">
-                        <li><a href="#routing">Routing</a></li>
+                        <li><a href="{{Url::base('getStarted#routing')}}">Routing</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="#input">Request/Input</a></li>
+                        <li><a href="{{Url::base('getStarted#input')}}">Request/Input</a></li>
                 </div> 
                 <div class="row">
-                        <li><a href="#views">Views/Responses</a></li>
+                        <li><a href="{{Url::base('getStarted#views')}}">Views/Responses</a></li>
                 </div>  
                 <div class="row">
-                        <li><a href="#errors">Errors/Logging</a></li>
+                        <li><a href="{{Url::base('getStarted#errors')}}">Errors/Logging</a></li>
                 </div>       
             </ul>
             <div class="row">
@@ -252,44 +232,4 @@
                       <li><a href="{{Url::base('caching#redis')}}">Redis</a></li>
                 </div>                   
             </ul>
-          </div>  
-      </div> 
-        <div class="col-lg-9 lmargin">
-           <h4 id="glance">Gliver at a glance</h4>
-            <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-            </p>
-                       
-            <h4 id="supported_features">Supported Features</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>
-            <h4 id="flowchart">Application Flowchart</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>    
-            <h4 id="configuration">Configuration</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>
-            <h4 id="routing">Routing</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>    
-            <h4 id="input">Response/Input</h4>
-            <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-            </p>
-                       
-            <h4 id="views">Views/Responses</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>
-            <h4 id="errors">Errors/Logging</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>        
-        </div>
-    </div>
-</div>
-@include('footer')
+            </div>
