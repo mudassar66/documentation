@@ -1,4 +1,4 @@
-<div class="col-sm-3 mycontent-left side-bar sidebar">
+<div class="col-sm-2 mycontent-left side-bar sidebar">
         <div class="row">
             <h4 class="lead">Content List</h4>
         </div>
