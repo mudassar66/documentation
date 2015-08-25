@@ -45,7 +45,7 @@ return array(
 		'Helpers\Url' 				=> 'Url',
 		'Helpers\Path' 				=> 'Path',
 		'Helpers\Session'			=> 'Session',
-		'Helpers\ArrayHelper'		=> 'Array',
+		'Helpers\ArrayHelper'                   => 'Array',
 		'Helpers\Cookie'			=> 'Cookie',
 		'Helpers\Form'				=> 'Form',
 		'Helpers\Input'				=> 'Input',

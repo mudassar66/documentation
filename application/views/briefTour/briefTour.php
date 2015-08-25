@@ -7,7 +7,7 @@
 
 @include('navbar')
 
-<div class="container">
+<div class="container" >
 
     <div class="row">
         
@@ -32,7 +32,7 @@
             <div class='row'>&nbsp;</div>
  
 
-            use Helpers\View;
+            use Helpers\Input;
             <div class='row'>&nbsp;</div><div class='row'>&nbsp;</div>
 
             class HelloController extends BaseController{ 
@@ -173,9 +173,8 @@
                 <div class="well">
                 <p>
                 <code>
-                    <span><</span>title><span>></span><span>{<span>{</span> $title <span>}</span><span>}</span>
-                <div class='row'>&nbsp;</div>
-                <span><</span><span>/</span>title<span>></span><span>
+                    <span><</span>title<span>></span><span> {<span>{</span> $title <span>}</span><span>} </span>
+                 <span><</span><span>/</span>title<span>></span><span>
                 </code>
                 </p>
               </div>
