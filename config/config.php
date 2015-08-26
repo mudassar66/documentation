@@ -29,7 +29,7 @@ return array(
 		/**
 		 *Set the default controller
 		 */
-		'controller' => 'Home',
+		'controller' => 'Preface',
 		/**
 		 *Set default action
 		 */
