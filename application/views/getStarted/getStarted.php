@@ -280,7 +280,7 @@
                 <div class='row' style='padding-left: 3%'><li>With easy to use extensible architecture, you can extend it on all ends.</li></div>
                 <div class='row' style='padding-left: 3%'><li>It is supported MVC architecture which is need of the day.</li></div>
                 <div class='row' style='padding-left: 3%'><li>This framework provides very clean URL and .htaccess is already managed for clean urls. </li></div>
-                <div class='row' style='padding-left: 3%'><li>Gliver does not need any separate engine. It uses Blade template engine which is very much same with PHP code.</li></div>
+                <div class='row' style='padding-left: 3%'><li>Gliver does not need any separate engine. It uses Gliver template engine which is very much same with PHP code.</li></div>
                 <div class='row' style='padding-left: 3%'><li>Helper Classes for all general purpose tasks like FORM building, Calendar,Captcha Cart,Directory,Download,Email,Pagination, Security, Unit testing and many more</li></div>
 
 
@@ -413,7 +413,7 @@
             
             </p>
             <p>
-                Now, assign this variable using Blade template engine as
+                Now, assign this variable using Gliver template engine as
                 <h5>View - Example 1: Views/Responsers<span>&nbsp;&nbsp;&nbsp; /application/views/helloword/helloword.php</span></h5>
               
                 <div class="well">
@@ -437,12 +437,12 @@
                 <div class="well">
                     <p>
                     <code>
-                        <br />public static function open($form_attr=array()) 
-                       <br /> {
-                       <br /><br />     //this try block is excecuted to enable throwing and catching of errors as appropriate
-                        <br /><br />
-                        try {
-                        <br /><br />
+                        <br />
+                        public static function open($form_attr=array()) 
+                        {<br /><br />
+                            //this try block is excecuted to enable throwing and catching of errors as appropriate.<br /><br />
+                        try {<br /><br />
+
                         //this block throwing exception if method argument is not an array
                         <br /><br />
                             if(! is_array($form_attr)){
@@ -451,28 +451,28 @@
                             <br /><br />
                             }
                             <br /><br />
-                                $form_attr_str='';
-                                foreach($form_attr as $key=>$val){
-                                    $form_attr_str .= $key.'="'.$val.'" ';
-                                }
-                                //$form_attr_str = implode('= ',$form_attr);
-                                return "<form ".$form_attr_str.' >';
-                            }
+                                $form_attr_str='';<br /><br />
+                                foreach($form_attr as $key=>$val) { <br /><br />
+                                    $form_attr_str .= $key.'="'.$val.'" ';<br /><br />
+                                }<br /><br />
+                                //$form_attr_str = implode('= ',$form_attr);<br /><br />
+                                return "<form ".$form_attr_str.' >';<br /><br />
+                            }<br /><br />
 
-                            catch(BaseException $e) {
+                            catch(BaseException $e) {<br /><br />
 
-                                //echo $e->getMessage();
-                                $e->show();
+                                //echo $e->getMessage();<br /><br />
+                                $e->show();<br /><br />
 
-                            }
+                            }<br /><br />
 
-                            catch(Exception $e) {
+                            catch(Exception $e) {<br /><br />
 
-                              echo $e->getMessage();
+                              echo $e->getMessage();<br /><br />
 
-                            }
+                            }<br /><br />
 
-        }
+                        }
                         <div class='row'>$data['title'] = 'Hello Word';</div>
                         <div class='row'>&nbsp;</div>
 

@@ -16,7 +16,8 @@ class HelpersController extends BaseController{
 //Set the value of main_content variable to be the path to the helpers view file	
 	public function getIndex()
 	{
-		View::render('helpers/helpers');
+                $data['func_usage_lbl'] = "Fucntion Use";
+		View::render('helpers/helpers',$data);
 	}
 
 }

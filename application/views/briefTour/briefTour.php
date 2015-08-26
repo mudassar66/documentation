@@ -148,7 +148,7 @@
                 </p>
             </div>
             
-            <p>This framework suggests to use a Template engine called Blade template engine. It is very easy and yet powerful template engine.
+            <p>This framework suggests to use a Template engine called Gliver template engine. It is very easy and yet powerful template engine.
             You can use php variables, include files, use  loops or if/else very easily.
             For example in view you declare title variable and associate view as 
             
@@ -167,7 +167,7 @@
             
             </p>
             <p>
-                Now, assign this variable using Blade template engine as
+                Now, assign this variable using Gliver template engine as
                 <h5>View - Example 3: Hello Word <span>&nbsp;&nbsp;&nbsp; /application/views/helloword/helloword.php</span></h5>
               
                 <div class="well">
