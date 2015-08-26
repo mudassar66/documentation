@@ -5,7 +5,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-3 mycontent-left side-bar sidebar">
+        <div class="col-sm-2 mycontent-left side-bar sidebar">
         <div class="row">
             <h4 class="lead">Content List</h4>
         </div>
@@ -254,20 +254,26 @@
             </ul>
            </div>  
       </div> 
-        <div class="col-lg-9 lmargin">
+        <div class="col-lg-10 lmargin">
            <h4 id="memcache">Memcache</h4>
             <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-            </p>
+                Coming soon...
+            </p> 
+            <div class='row' style="padding-bottom: 5%">&nbsp;</div> 
+
                        
             <h4 id="memcached">Memcached</h4>
                 <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>
+                Coming soon...
+            </p> 
+            <div class='row' style="padding-bottom: 5%">&nbsp;</div> 
+
             <h4 id="redis">Redis</h4>
-                <p>
-                <br/>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>          
-                </p>      
+               <p>
+                Coming soon...
+            </p> 
+            <div class='row' style="padding-bottom: 5%">&nbsp;</div> 
+     
         </div>
     </div>
 </div>

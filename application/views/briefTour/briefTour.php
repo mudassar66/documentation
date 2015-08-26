@@ -28,17 +28,17 @@
              <div class="well">
             <p>
             <code>
-            namespace Controllers;
+                <<span>?</span>php namespace Controllers; //controller namespace included
             <div class='row'>&nbsp;</div>
  
 
-            use Helpers\Input;
+            use Input; //Input helper class is added
             <div class='row'>&nbsp;</div><div class='row'>&nbsp;</div>
 
-            class HelloController extends BaseController{ 
+            class HelloController extends BaseController {  // class hellocontroller defined
             <div class='row'>&nbsp;</div><div class='row'>&nbsp;</div>
 
-                public function Index()
+                public function Index() //hellocontroler method index is defined
                 <div class='row'>&nbsp;</div>
                 <div class='row'>&nbsp;</div>
                 
@@ -110,14 +110,14 @@
              <div class="well">
             <p>
             <code>
-            namespace Controllers;
+            <<span>?</span>php namespace Controllers;
             <div class='row'>&nbsp;</div>
  
 
-            use Helpers\View;
+            use View;
             <div class='row'>&nbsp;</div><div class='row'>&nbsp;</div>
 
-            class HelloController extends BaseController{ 
+            class HelloController extends BaseController {  
             <div class='row'>&nbsp;</div><div class='row'>&nbsp;</div>
 
                 public function Index()
@@ -127,8 +127,10 @@
                 { 
                 <div class='row'>&nbsp;</div>
                 <div class='row'>&nbsp;</div>
+                 // Class heeloword.php view from views/helloword is called. Render function will display html of this view.   
+                <div style='padding-left:5%'>View::render('helloword/helloword'); 
                     
-                <div style='padding-left:5%'>View::render('helloword/helloword');</div> 
+                </div> 
                 <div class='row'>&nbsp;</div>
                 <div class='row'>&nbsp;</div>
                 
@@ -191,11 +193,19 @@
                 <div class="well">
                 <p>
                 <code>
-                    <div class='row'>&nbsp;</div>
+                    <br />
+                    <br />
+                    <span><</span>!-- $users array from view is now iterating through foreach loop -->
+                    <br />
+                    <br />
+                    
                     <span>@</span>foreach ($users as $user)
                    <div class='row'>&nbsp;</div>
                      Email address:
                      <div class='row'>&nbsp;</div>
+                      <span><</span>!-- $user array element email is being display -->
+                    <br />
+                    <br />
                      <span>{</span><span>{</span> $user['email']<span>}</span><span>}</span>
                      <div class='row'>&nbsp;</div>
                      
@@ -221,7 +231,7 @@
                     Model are used to add business logic to your application. You can create model class in <code>/application/model</code> directory.
                     Controller calls model and send appropriate response to view using that model. 
                     For example, if you want to view all user records from <code>users</code> table then following code snippet will help.
-                <h5>Model - Example 6: User profile <span>&nbsp;&nbsp;&nbsp; /application/models/Usermodel.php</span></h5>
+                <h5>Model - Example 6: User profile <span>&nbsp;&nbsp;&nbsp; /application/models/UsersModel.php</span></h5>
 
                 <div class="well">
                 <p>
