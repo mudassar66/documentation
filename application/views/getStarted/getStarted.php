@@ -276,12 +276,12 @@
                Some considerable features of Gliver are:
            <ul style='list-style: circle'>
                <div class='row' style='padding-left: 3%'><li>It is light Weight. Unlike Laravel, it is very light weight but powerful.</li></div>
-               <div class='row' style='padding-left: 3%'><li>Gliver is fast and give you better performance then other frameworks</li></div>
+               <div class='row' style='padding-left: 3%'><li>Gliver is fast and give you better performance then other frameworks.</li></div>
                 <div class='row' style='padding-left: 3%'><li>With easy to use extensible architecture, you can extend it on all ends.</li></div>
                 <div class='row' style='padding-left: 3%'><li>It is supported MVC architecture which is need of the day.</li></div>
                 <div class='row' style='padding-left: 3%'><li>This framework provides very clean URL and .htaccess is already managed for clean urls. </li></div>
                 <div class='row' style='padding-left: 3%'><li>Gliver does not need any separate engine. It uses Gliver template engine which is very much same with PHP code.</li></div>
-                <div class='row' style='padding-left: 3%'><li>Helper Classes for all general purpose tasks like FORM building, Calendar,Captcha Cart,Directory,Download,Email,Pagination, Security, Unit testing and many more</li></div>
+                <div class='row' style='padding-left: 3%'><li>Helper Classes for all general purpose tasks like FORM building, Calendar,Captcha Cart,Directory,Download,Email,Pagination, Security, Unit testing and many more...</li></div>
 
 
            </ul>
@@ -396,7 +396,7 @@
             <h4 id="views">Views/Responses</h4>
                 <p>
                     We discussed this in <a href='{{ Url::base('brief#views') }}'>View</a> Section. 
-                    For sake of completion, we are putting that example here:
+                    For sake of completion, we put that example here:
                 </p>
                 <h5>Controller - Example 1: Views/Responses <span>&nbsp;&nbsp;&nbsp; /application/controllers/HelloController.php</span></h5>
               
@@ -447,7 +447,7 @@
                         <br /><br />
                             if(! is_array($form_attr)){
                          <br /><br />  
-                                throw new HelperException(sprintf('Expecting array of form attributes.e.g.$form_attr = array(\'name\'=>\'form1\',\'action\'=>\'post\')',$form_attr));
+                                throw new HelperException(sprintf('Expecting array of form attributes.e.g.$form_attr = array('name'=>'form1','action'=>'post')',$form_attr));
                             <br /><br />
                             }
                             <br /><br />

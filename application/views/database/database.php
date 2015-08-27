@@ -393,7 +393,28 @@
            
 			<h4 id="query_builder">Query Builder</h4>
 			    <p>
-                                Coming soon...
+                                Query Builder is an efficient way for manipulating SQL queries. 
+                                Here is a code snippet for retrieving all records from a table name 'users'
+                                
+                            <div class='well'>
+                                <p>
+                                    <code>
+                                        
+                                        protected static $table = 'users'; // 'users' is a database table name
+                                        <br /> <br />
+                                        /**<br />
+                                        *  Below line calls two methods through a channing process<br />
+                                        * First Query object identify table name from <i>from()</i> function then from <br />
+                                        * <i>all()</i> function all rows of users table retrieved.<br />
+                                        **/<br /><br />
+                                        static::Query()->from(self::$table)->all(); 
+                                        
+                                    </code>
+                                    
+                                </p>
+                                
+                            </div>
+                               
                             </p> 
                             <div class='row' style="padding-bottom: 5%">&nbsp;</div> 
 

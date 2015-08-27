@@ -20,10 +20,10 @@
         </div> 
         <div class="col-lg-9 lmargin">
            <h4 id="controllers">Controllers</h4>
-            <p> You place all your controller classes in the <code>application/controllers</code> directory.</p>
-            <p>The entry point into your application is via the controllers. So it is from here that all the code for your application is executed. 
+            <p> You can place all your controller classes in the <code>application/controllers</code> directory.</p>
+            <p>The entry point of your application is via the controllers. So it is from here that all the code for your application is executed. 
             When writing your controller, you need to specify the namespace so that the autoloader can detect it. Besides, all controllers extend the <code>BaseController</code> class. </p>
-            <p>For example,let's try to create a simple <code>HelloController</code> class.</p>
+            <p>For example, let's try to create a simple <code>HelloController</code> class.</p>
             <h5>Controller - Example 1: Hello Word <span>&nbsp;&nbsp;&nbsp; /application/controllers/HelloController.php</span></h5>
              <div class="well">
             <p>
@@ -63,7 +63,7 @@
             </div>
 
             <div class="alert alert-info" role="alert">
-                <p>  <strong>Note!</strong> The first thing to note is that the name of the php file wherein you have your class must be the same as the name of the Controller class. One file can only contain one controller class
+                <p>  <strong>Note!</strong> The first thing to note is that the name of the PHP file must be the same as the name of the Controller class. One file can only contain one controller class
                 </p>
             </div>
             
@@ -127,7 +127,7 @@
                 { 
                 <div class='row'>&nbsp;</div>
                 <div class='row'>&nbsp;</div>
-                 // Class heeloword.php view from views/helloword is called. Render function will display html of this view.   
+                 // helloword.php View from views/helloword is called. Render function will display HTML of this View.   
                 <div style='padding-left:5%'>View::render('helloword/helloword'); 
                     
                 </div> 
@@ -146,13 +146,13 @@
             </p>
             </div>
                  <div class="alert alert-info" role="alert">
-                <p>  <strong>Note!</strong>When we call view in example 3, we did not include .php. We only use php file name "helloword" without php extension
+                <p>  <strong>Note!</strong> When we called View in example 3, we did not include .php. We only use PHP file name "helloword" without php extension
                 </p>
             </div>
             
             <p>This framework suggests to use a Template engine called Gliver template engine. It is very easy and yet powerful template engine.
             You can use php variables, include files, use  loops or if/else very easily.
-            For example in view you declare title variable and associate view as 
+            For example in View you declare title variable and associate view as 
             
             <h5>Controller - Example 3: Hello Word <span>&nbsp;&nbsp;&nbsp; /application/controllers/HelloController.php</span></h5>
               
