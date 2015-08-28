@@ -44,20 +44,15 @@
                 
                 { 
                 <div class='row'>&nbsp;</div>
-                <div class='row'>&nbsp;</div>
                     
                 <div style='padding-left:5%'>echo 'hello word!';</div> 
-                <div class='row'>&nbsp;</div>
                 <div class='row'>&nbsp;</div>
                 
                 }	
                 <div class='row'>&nbsp;</div>
                 <div class='row'>&nbsp;</div>
             }
-            <div class='row'>&nbsp;</div>
-            <div class='row'>&nbsp;</div> 
-
-            
+             
             </code>
             </p>
             </div>
@@ -83,9 +78,9 @@
             <p>
             <code>
                 <span><</span>html<span>></span>
-                <div class='row'>&nbsp;</div>
+                <br /><br />
                 <span><</span>head<span>></span>
-                <div class='row'>&nbsp;</div>
+                <br /><br />
                 <span><</span>title<span>></span>Hello Word Title
                 <span><</span><span>/</span>title<span>></span>
                 <div class='row'>&nbsp;</div>
@@ -111,36 +106,22 @@
             <p>
             <code>
             <<span>?</span>php namespace Controllers;
-            <div class='row'>&nbsp;</div>
- 
-
-            use View;
-            <div class='row'>&nbsp;</div><div class='row'>&nbsp;</div>
-
+            <br /><br />
+            use View;<br /><br />
+             
             class HelloController extends BaseController {  
-            <div class='row'>&nbsp;</div><div class='row'>&nbsp;</div>
-
+           <br /><br />
                 public function Index()
-                <div class='row'>&nbsp;</div>
-                <div class='row'>&nbsp;</div>
+               <br /><br />
                 
-                { 
-                <div class='row'>&nbsp;</div>
-                <div class='row'>&nbsp;</div>
-                 // helloword.php View from views/helloword is called. Render function will display HTML of this View.   
-                <div style='padding-left:5%'>View::render('helloword/helloword'); 
-                    
-                </div> 
-                <div class='row'>&nbsp;</div>
-                <div class='row'>&nbsp;</div>
-                
+                {   
+                <br /><br /> 
+                     // helloword.php View from views/helloword is called. Render function will display HTML of this View.   
+                <div style='padding-left:5%'>View::render('helloword/helloword');  </div> 
+                 
                 }	
                 <div class='row'>&nbsp;</div>
-                <div class='row'>&nbsp;</div>
             }
-            <div class='row'>&nbsp;</div>
-            <div class='row'>&nbsp;</div> 
-
             
             </code>
             </p>
@@ -155,8 +136,7 @@
             For example in View you declare title variable and associate view as 
             
             <h5>Controller - Example 3: Hello Word <span>&nbsp;&nbsp;&nbsp; /application/controllers/HelloController.php</span></h5>
-              
-            <div class="well">
+             <div class="well">
                 <p>
                 <code>
                     $data['title'] = 'Hello Word';  
@@ -193,8 +173,7 @@
                 <div class="well">
                 <p>
                 <code>
-                    <br />
-                    <br />
+                    
                     <span><</span>!-- $users array from view is now iterating through foreach loop -->
                     <br />
                     <br />
@@ -220,8 +199,7 @@
                      <div class="row">&nbsp;</div>
                     <span>@</span>endforeach
 
-                     <div class="row">&nbsp;</div>
-                </code>
+                 </code>
                 </p>
               </div>
                 
@@ -236,9 +214,8 @@
                 <div class="well">
                 <p>
                 <code>
-                    <div class='row'>&nbsp;</div>
-                    <span><</span>?</span>php namespace Models;
-                   <div class='row'>&nbsp;</div>
+                     <span><</span>?</span>php namespace Models;
+                     <br /><br />
                     class UsersModel extends Model{
                      <div class='row'>&nbsp;</div>
                     protected static $table = 'users';
@@ -257,8 +234,7 @@
 
                     }
                       
-                     <div class="row">&nbsp;</div>
-                </code>
+                 </code>
                 </p>
               </div>
                 <p>
@@ -272,8 +248,7 @@
                 <div class="well">
                 <p>
                 <code>
-                    <div class='row'>&nbsp;</div>
-                    <span><</span>?</span>php namespace Controllers;
+                     <span><</span>?</span>php namespace Controllers;
                    <div class='row'>&nbsp;</div>
                    use Models\UsersModel;
 
@@ -283,11 +258,8 @@
                     public function Index()
                      <div class='row'>&nbsp;</div>
                     UsersModel::getusers();
-                    <div class='row'>&nbsp;</div>
-
                     
-                     <div class="row">&nbsp;</div>
-                </code>
+                 </code>
                 </p>
               </div>  
                     
@@ -298,7 +270,7 @@
         
         </div>
     </div>
-    <div class='row'>&nbsp;</div>
+    <div class='row' style="margin-bottom: 5%">&nbsp;</div>
 </div>
 
 @include('footer')

@@ -374,8 +374,7 @@
                 <div class='row'>&nbsp;</div>
                 
                 { 
-                <div class='row'>&nbsp;</div>
-                <div class='row'>&nbsp;</div> 
+                 <div class='row'>&nbsp;</div> 
                 <div style='padding-left:5%'>$input = Input::get();</div> 
                 <div class='row'>&nbsp;</div>
                 <div class='row'>&nbsp;</div>
@@ -386,8 +385,7 @@
                 <div class='row'>&nbsp;</div>
                 <div class='row'>&nbsp;</div>
             }
-            <div class='row'>&nbsp;</div>
-            <div class='row'>&nbsp;</div> 
+            
                 </code>
                 
             </div>
@@ -437,7 +435,7 @@
                 <div class="well">
                     <p>
                     <code>
-                        <br />
+                         
                         public static function open($form_attr=array()) 
                         {<br /><br />
                             //this try block is excecuted to enable throwing and catching of errors as appropriate.<br /><br />
