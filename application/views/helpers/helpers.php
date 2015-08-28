@@ -5,7 +5,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-2 mycontent-left side-bar sidebar">
+        <div class="col-sm-3 mycontent-left side-bar sidebar">
         <div class="row">
             <h4 class="lead">Content List</h4>
         </div>
@@ -254,7 +254,7 @@
             </ul>
           </div>   
       </div> 
-        <div class="col-lg-10 lmargin">
+        <div class="col-lg-9 lmargin">
            
         <h4 id="array">Array</h4>
         <div class="col-lg-12" id='array_div'>

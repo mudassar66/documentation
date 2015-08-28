@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-2 mycontent-left side-bar sidebar">
+        <div class="col-sm-3 mycontent-left side-bar sidebar">
         <div class="row">
             <h4 class="lead">Content List</h4>
         </div>
@@ -255,7 +255,7 @@
             </ul>
            </div> 
       </div> 
-        <div class="col-lg-10 lmargin">
+        <div class="col-lg-9 lmargin">
                         <h4 id="basic_usage">Basic Usage</h4>
 			<p>
                             Gliver easily connect application to database in a simple way.
