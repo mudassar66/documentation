@@ -270,7 +270,7 @@
         
         </div>
     </div>
-    <div class='row' style="margin-bottom: 5%">&nbsp;</div>
+    <div class='row' style="margin-bottom: 8%">&nbsp;</div>
 </div>
 
 @include('footer')

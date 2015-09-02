@@ -5,19 +5,19 @@
             </div>
             <ul>
                 <div class="row">
-                   <li><a href="#introduction">Introduction</a></li>
+                   <li><a href="{{Url::base('preface#introduction')}}">Introduction</a></li>
                 </div>
                 <div class="row">   
-                    <li><a href="#quick_start">Quick Start</a></li>
+                    <li><a href="{{Url::base('preface#quick_start')}}">Quick Start</a></li>
                 </div>    
                 <div class="row">
-                      <li><a href="#release_notes">Release Notes</a></li>
+                      <li><a href="{{Url::base('preface#release_notes')}}">Release Notes</a></li>
                 </div>      
                 <div class="row">
-                       <li><a href="#upgrade_guide">Upgrade Guide</a></li>
+                       <li><a href="{{Url::base('preface#upgrade_guide')}}">Upgrade Guide</a></li>
                 </div>       
                 <div class="row">
-                        <li><a href="#contribution_guide">Contribution Guide</a></li>
+                        <li><a href="{{Url::base('preface#contribution_guide')}}">Contribution Guide</a></li>
                 </div>        
             </ul>
              <div class="row">

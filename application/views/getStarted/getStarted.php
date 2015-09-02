@@ -479,9 +479,10 @@
                     </p>
                 </div>
                 
-                <div class='row' style="padding-bottom: 5%">&nbsp;</div>
 
         </div>
     </div>
+        <div class='row' style="margin-bottom: 8%">&nbsp;</div>
+
 </div>
 @include('footer')
