@@ -264,9 +264,13 @@
           
 			<h4 id="downloading">Downloading Gliver</h4>
 			    <p>
-                            <p>
+                            <p>Gliver can install in following simple steps:</p>
+                                
                             <ul>
-                                <li><a href='https://github.com/gliver-mvc/gliver/archive/master.zip'>Gliver Version 1.0.0 (Current Version)</a></li>
+                                <div class='row' style="padding-left: 5%">  <li>1) First, download code from <a href='https://github.com/gliver-mvc/gliver/archive/master.zip'>Here</a></li></div>
+                                <div class='row' style="padding-left: 5%"><li>2) Unzip it and upload on your web server.</li></div>
+                                <div class='row' style="padding-left: 5%"><li>3) Open <code>config/config.php</code> file in any text editor and do local changes. </li></div>
+                                <div class='row' style="padding-left: 5%"><li>4) Open <code>config/database.php</code> file and change your database settings. </li></div>
                             </ul>
                             </p> 
                             <div class='row' >&nbsp;</div>
@@ -280,14 +284,63 @@
 			<h4 id="upgrade">Upgrading from previous versions</h4>
 			    <p>
                             <div class="row">&nbsp;</div>
-                            <p> Not Applicable</p>
+                            <p> There are just couple of steps for upgrading to latest version. Following are these two steps:</p>
+                            <p> 
+                            <ul>
+                                <div class='row' style="padding-left: 5%">  <li>1) Download Latest Version.</li></div>
+                                <div class='row' style="padding-left: 5%"><li>2) Just Replace <code>system</code> directory with recently downloaded <code>system</code>directory code.</li></div>
+                            </ul>
+                            </p>
                             </p> 
-                        <div class='row' style="padding-bottom: 5%">&nbsp;</div>
+                        <div class='row'  >&nbsp;</div>
 
 			<h4 id="troubleshooting">Troubleshooting</h4>
-			    <p>
-                               Coming Soon...
+			    
+                            <h5>Not Finding Default Controller</h5>
+                            <div class='row' style="padding-left: 2%"><strong>Issue</strong></div>         
+                            <p>
+                                Let say, all configuration are done and your installed directory is at root of web server and directory name is <code>gliver</code>
+                                Then you hit http://localhost/gliver . A page will open but you are not sure which controller is used by default. 
 			    </p>
+                            <div class='row' style="padding-left: 2%"><strong>Solution</strong></div>         
+                            <p>
+                                In your <code>config/config.php</code> file, in <code>array()</code>, there is parameter <code>default</code>. This parameter contain another array and that array has two parameters.
+                                One is <code>controller</code> and other is <code>action</code>. Controller name mentioned here is used as a default controller and method mentioned here will run of that controller. You can change controller name and also method name.   
+			    </p>
+                            <div class="alert alert-info" role="alert">
+                                <p>  <strong>Note!</strong> <code>method</code> name should exist in <code>controller</code> you will use in above <code>default</code> parameter. 
+                                </p>
+                            </div>
+                            <div class='row' >&nbsp;</div>
+                            <h5>Database is not connecting</h5>
+                            <div class='row' style="padding-left: 2%"><strong>Issue</strong></div>         
+                            <p>
+                                Database is not connecting.
+			    </p>
+                            
+
+                            <div class='row' style="padding-left: 2%"><strong>Solution</strong></div>         
+                            <p>
+                                In your <code>config/database.php</code> file, please identify your relevant DBMS settings and put your Database setting. 
+                                Let say, you have MySQL database then first put <code>mysql</code> in <code>default</code> parameter. 
+                                Then put your database server name in <code>host</code> parameter. In most cases, it is <code>localhost</code>.
+                                Then put your database username in <code>username</code> and put password in <code>password</code> parameter. 
+                                Then put your database name in <code>database</code> parameter.
+                                    
+ 			    </p>
+                             <div class='row' >&nbsp;</div>
+                            <h5>Helper class is not use able</h5>
+                            <div class='row' style="padding-left: 2%"><strong>Issue</strong></div>         
+                            <p>
+                               A user want to use Helper class functions but system is giving error that this class/method not exists.
+			    </p>
+                            
+
+                            <div class='row' style="padding-left: 2%"><strong>Solution</strong></div>         
+                            <p>
+                                Put <code>use Helpers\Class_name;</code> to use helper class functions. 
+                                <code>Class_name</code> should be replaced by actual class name.
+ 			    </p>
                             <div class='row' style="padding-bottom: 5%">&nbsp;</div>
 
         </div>
